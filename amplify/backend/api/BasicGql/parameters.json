@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "BasicGql",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authbasic58841fb7",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
