@@ -25,14 +25,14 @@ const theme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      main: '#1EA1F2',
+      main: '#367373',
       contrastText: "#fff",
     },
     background: {
-      default: '#15202B',
-      paper: '#15202B',
+      default: '#30244c',
+      paper: '#30244c',
     },
-    divider: '#37444C',
+    divider: '#B19de4',
   },
   overrides: {
     MuiButton: {
@@ -59,10 +59,13 @@ const useStyles = makeStyles(theme => ({
   },
   appBar: {
     marginLeft: drawerWidth,
+    backgroundColor: 'red',
+
   },
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    // boxShadow: '0px 0px 10px 0px rgba(0,0,0,0.2)',
   },
   drawerPaper: {
     width: drawerWidth,

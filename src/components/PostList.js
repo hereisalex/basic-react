@@ -20,8 +20,10 @@ const useStyles = makeStyles(theme => ({
   listRoot: {
     width: '100%',
     wordBreak: 'break-all',
-    overflow: 'scroll',
-    borderRight: '1px solid #37444C',
+    overflow: 'auto',
+    backgroundColor: '#30244c',
+    borderBottomRightRadius: '5px',
+    // boxShadow: '0px 0px 5px black',
   },
   alignCenter: {
     textAlign: 'center',
@@ -37,12 +39,15 @@ const useStyles = makeStyles(theme => ({
     position: 'sticky',
     top: 0,
     zIndex: 1200,
-    backgroundColor: '#15202B',
-    borderBottom: '1px solid #37444C',
+    backgroundColor: '#30244c',
+    color: 'white',
+    borderBottom: '3px solid #B19de4',
+    
+    // boxShadow: '0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12)',
   },
   clickable: {
     cursor: 'pointer',
-  }
+  },
 }));
 
 export default function PostList({ isLoading, posts, getAdditionalPosts, listHeaderTitle, listHeaderTitleButton }) {
